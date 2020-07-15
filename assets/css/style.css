@@ -13,3 +13,12 @@
 html {
   height: 100%;
 }
+
+#index-body {
+  font-family: "Gloria Hallelujah", cursive;
+  background-image: url("/assets/img/background/tri-color-diamond-glass-background-618226_1280.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
