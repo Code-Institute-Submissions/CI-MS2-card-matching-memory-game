@@ -100,3 +100,23 @@ a:hover {
   background-repeat: repeat-y;
   background-size: cover;
 }
+
+#threebysix-grid-body .board {
+  width: 800px;
+  height: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  perspective: 1000px;
+}
+
+#threebyfour-grid-body .board {
+  width: 640px;
+  height: 540px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  perspective: 1000px;
+}
+
+
