@@ -26,3 +26,19 @@ html {
   background-repeat: repeat-y;
   background-size: cover;
 }
+
+/*Styling the "landing page" (div that's inside the index.html's body)*/
+#landing-page {
+  text-align: center;
+  padding-top: 2em;
+}
+
+h1 {
+  font-family: "Rock Salt", cursive;
+}
+
+p {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+}
