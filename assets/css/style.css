@@ -51,6 +51,7 @@ p {
 #table li {
   display: inline;
   font-weight: bold;
+  font-size: 1.2em;
 }
 
 .fa-paw {
@@ -66,3 +67,13 @@ a[href = "3x6_grid.html"] > .fa-paw:nth-child(1) {
   padding-left: 5em;
 }
 
+a:link,
+a:visited,
+a:active {
+  color: black;
+}
+
+a:hover {
+  color: blue;
+  cursor: url("/assets/img/rest/cat-paw-black(20x19).png"), pointer;
+}
