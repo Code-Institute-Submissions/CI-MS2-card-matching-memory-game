@@ -1,6 +1,8 @@
+/*Import desired fonts*/
 @import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
 
+/*Convention: overwritting (i.e. reseting) these stylings, just in case.*/
 * {
   padding: 0;
   border: 0;
@@ -10,14 +12,16 @@
   box-sizing: border-box;
 }
 
+/*Set the html to take up 100% of the browser height*/
 html {
   height: 100%;
 }
 
+/*Styling the index.html body container: font and background image*/
 #index-body {
   font-family: "Gloria Hallelujah", cursive;
   background-image: url("/assets/img/background/tri-color-diamond-glass-background-618226_1280.png");
-  height: 100%;
+  height: 100%; /*Set the height to be 100% of the parent container, which is html, whose height is set to 100% of the browser*/
   background-position: center;
   background-repeat: repeat-y;
   background-size: cover;
