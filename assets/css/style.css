@@ -119,4 +119,18 @@ a:hover {
   perspective: 1000px;
 }
 
+.tile {
+  width: calc(16.666% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  cursor: pointer;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
 
+#threebyfour-grid-body .tile {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+}
