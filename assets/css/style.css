@@ -12,6 +12,8 @@
   box-sizing: border-box;
 }
 
+/* ***START: Styling of the index.html*** */
+
 /*Set the html to take up 100% of the browser height*/
 html {
   height: 100%;
@@ -59,11 +61,11 @@ p {
   padding-left: 1em;
 }
 
-a[href = "3x4_grid.html"] > .fa-paw:nth-child(2) {
+a[href="3x4_grid.html"] > .fa-paw:nth-child(2) {
   padding-right: 5em;
 }
 
-a[href = "3x6_grid.html"] > .fa-paw:nth-child(1) {
+a[href="3x6_grid.html"] > .fa-paw:nth-child(1) {
   padding-left: 5em;
 }
 
@@ -76,4 +78,25 @@ a:active {
 a:hover {
   color: blue;
   cursor: url("/assets/img/rest/cat-paw-black(20x19).png"), pointer;
+}
+
+/* ***END: Styling of the index.html*** */
+
+
+#threebysix-grid-body {
+  display: flex;
+  background-image: url("/assets/img/background/pattern-4008915_1280.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
+
+#threebyfour-grid-body {
+  display: flex;
+  background-image: url("/assets/img/background/pattern-3296033_1280.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
 }
