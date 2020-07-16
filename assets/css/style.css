@@ -134,3 +134,23 @@ a:hover {
   width: calc(25% - 10px);
   height: calc(33.333% - 10px);
 }
+
+.tile-front,
+.tile-back {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 10px;
+  backface-visibility: hidden;
+}
+
+#threebysix-grid-body .tile-back {
+  background:  #D68717;
+}
+
+#threebyfour-grid-body .tile-back {
+  background: #2d3f81;
+}
+
+
