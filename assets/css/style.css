@@ -42,3 +42,13 @@ p {
   font-weight: bold;
   font-size: 1.2em;
 }
+
+#table {
+  display: table;
+  margin: 0 auto;
+}
+
+#table li {
+  display: inline;
+  font-weight: bold;
+}
