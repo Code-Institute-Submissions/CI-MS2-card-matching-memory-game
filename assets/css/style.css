@@ -153,4 +153,18 @@ a:hover {
   background: #2d3f81;
 }
 
+.tile-front {
+  transform: rotateY(180deg);
+  background: #f0ead6;
+}
+
+.tile:active {
+  transform: scale(.95);
+  transition: transform .2s;
+}
+
+.tile.flipped {
+  transform: rotateY(180deg);
+}
+
 
