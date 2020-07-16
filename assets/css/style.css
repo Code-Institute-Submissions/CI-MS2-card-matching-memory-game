@@ -53,12 +53,16 @@ p {
   font-weight: bold;
 }
 
-#just-a-padding-element {
-  padding-right: 5em;
-  padding-left: 5em;
-}
-
 .fa-paw {
   padding-right: 1em;
   padding-left: 1em;
 }
+
+a[href = "3x4_grid.html"] > .fa-paw:nth-child(2) {
+  padding-right: 5em;
+}
+
+a[href = "3x6_grid.html"] > .fa-paw:nth-child(1) {
+  padding-left: 5em;
+}
+
