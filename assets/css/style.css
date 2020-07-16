@@ -45,6 +45,7 @@ p {
   font-size: 1.2em;
 }
 
+/*Start: Making the list elements display side by side.*/
 #table {
   display: table;
   margin: 0 auto;
@@ -55,12 +56,15 @@ p {
   font-weight: bold;
   font-size: 1.2em;
 }
+/*End: Making the list elements display side by side.*/
 
 .fa-paw {
   padding-right: 1em;
   padding-left: 1em;
 }
 
+/*These combinations of selectors used to targer the second (right) paw icon of the first (left) grid link,
+and the first (left) paw icon of the second (right) grid link, specifically, without tageting all four of the paw icons*/
 a[href="3x4_grid.html"] > .fa-paw:nth-child(2) {
   padding-right: 5em;
 }
@@ -69,6 +73,7 @@ a[href="3x6_grid.html"] > .fa-paw:nth-child(1) {
   padding-left: 5em;
 }
 
+/*Styling the links' possible "states" using pseudo-classes*/
 a:link,
 a:visited,
 a:active {
@@ -83,8 +88,10 @@ a:hover {
 /* ***END: Styling of the index.html*** */
 
 
+/* ***START: Styling of the 3x4_grid.html & the 3x6_grid.html*** */
+
 #threebysix-grid-body {
-  display: flex;
+  display: flex; /*Setting display to "flex" comes with a set of connected default properties, one of which (flex-wrap) is to be altered below: https://flexbox.help/*/
   background-image: url("/assets/img/background/pattern-4008915_1280.png");
   height: 100%;
   background-position: center;
@@ -93,7 +100,7 @@ a:hover {
 }
 
 #threebyfour-grid-body {
-  display: flex;
+  display: flex; /*Setting display to "flex" comes with a set of connected default properties, one of which (flex-wrap) is to be altered below: https://flexbox.help/*/
   background-image: url("/assets/img/background/pattern-3296033_1280.png");
   height: 100%;
   background-position: center;
@@ -104,8 +111,8 @@ a:hover {
 #threebysix-grid-body .board {
   width: 800px;
   height: 540px;
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /*Setting display to "flex" comes with a set of connected default properties, one of which (flex-wrap) is to be altered below: https://flexbox.help/*/
+  flex-wrap: wrap; /*If selecting "display: flex", "flex-wrap" is set by default to "nowrap": https://flexbox.help/*/
   margin: auto;
   perspective: 1000px;
 }
@@ -113,8 +120,8 @@ a:hover {
 #threebyfour-grid-body .board {
   width: 640px;
   height: 540px;
-  display: flex;
-  flex-wrap: wrap;
+  display: flex; /*Setting display to "flex" comes with a set of connected default properties, one of which (flex-wrap) is to be altered below: https://flexbox.help/*/
+  flex-wrap: wrap; /*If selecting "display: flex", "flex-wrap" is set by default to "nowrap": https://flexbox.help/*/
   margin: auto;
   perspective: 1000px;
 }
@@ -167,4 +174,4 @@ a:hover {
   transform: rotateY(180deg);
 }
 
-
+/* ***END: Styling of the 3x4_grid.html & the 3x6_grid.html*** */
