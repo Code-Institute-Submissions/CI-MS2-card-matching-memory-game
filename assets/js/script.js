@@ -84,3 +84,5 @@ function isBoardCleared() {
     tile.style.order = randomPos;
   });
 })();
+
+tiles.forEach((tile) => tile.addEventListener("click", flipTile));
