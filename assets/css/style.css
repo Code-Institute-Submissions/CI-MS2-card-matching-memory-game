@@ -66,11 +66,11 @@ p {
 /*These combinations of selectors used to targer the second (right) paw icon of the first (left) grid link,
 and the first (left) paw icon of the second (right) grid link, specifically, without tageting all four of the paw icons*/
 a[href="3x4_grid.html"] > .fa-paw:nth-child(2) {
-  padding-right: 5em;
+  padding-right: 4em;
 }
 
 a[href="3x6_grid.html"] > .fa-paw:nth-child(1) {
-  padding-left: 5em;
+  padding-left: 4em;
 }
 
 /*Styling the links' possible "states" using pseudo-classes*/
@@ -82,7 +82,7 @@ a:active {
 
 a:hover {
   color: blue;
-  cursor: url("/assets/img/rest/cat-paw-black(20x19).png"), pointer;
+  cursor: url("/assets/img/rest/cat-paw-black(20x19).png"), pointer; /*Add a custom cursor image, with pointer as a fallback option*/
 }
 
 /* ***END: Styling of the index.html*** */
