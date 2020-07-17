@@ -109,7 +109,7 @@ a:hover {
 }
 
 #threebysix-grid-body .board {
-  width: 800px;
+  width: 910px;
   height: 540px;
   display: flex; /*Setting display to "flex" comes with a set of connected default properties, one of which (flex-wrap) is to be altered below: https://flexbox.help/*/
   flex-wrap: wrap; /*If selecting "display: flex", "flex-wrap" is set by default to "nowrap": https://flexbox.help/*/
