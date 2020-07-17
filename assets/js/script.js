@@ -77,3 +77,10 @@ function isBoardCleared() {
     return;
   }
 }
+
+(function shuffle() {
+  tiles.forEach((tile) => {
+    let randomPos = Math.floor(Math.random() * numberOfTiles);
+    tile.style.order = randomPos;
+  });
+})();
