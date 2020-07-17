@@ -35,3 +35,23 @@ function checkForMatch() {
 
   isMatch ? disableTiles() : flipTilesBack();
 }
+
+
+function disableTiles() {
+  firstTile.removeEventListener("click", flipTile);
+  secondTile.removeEventListener("click", flipTile);
+
+  resetBoard();
+}
+
+
+function flipTilesBack() {
+  lockBoard = true;
+
+  setTimeout(() => {
+    firstTile.classList.remove("flipped");
+    secondTile.classList.remove("flipped");
+
+    resetBoard();
+  }, 1500);
+}
