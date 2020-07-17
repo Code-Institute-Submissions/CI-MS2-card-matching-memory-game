@@ -28,3 +28,10 @@ function flipTile() {
 
   isBoardCleared();
 }
+
+
+function checkForMatch() {
+  let isMatch = firstTile.dataset.pairingnumber === secondTile.dataset.pairingnumber;
+
+  isMatch ? disableTiles() : flipTilesBack();
+}
