@@ -55,3 +55,9 @@ function flipTilesBack() {
     resetBoard();
   }, 1500);
 }
+
+
+function resetBoard() {
+  [isOneTileFlipped, lockBoard] = [false, false];
+  [firstTile, secondTile] = [null, null];
+}
