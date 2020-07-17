@@ -172,7 +172,7 @@ a:hover {
 }
 
 .tile.flipped {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); /*Addition or removal of the .flipped class to tiles is to be regulated by JS*/
 }
 /*End: Styling of the tiles.*/
 
