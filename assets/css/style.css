@@ -123,23 +123,24 @@ a:hover {
   display: flex; /*Setting display to "flex" comes with a set of connected default properties, one of which (flex-wrap) is to be altered below: https://flexbox.help/*/
   flex-wrap: wrap; /*If selecting "display: flex", "flex-wrap" is set by default to "nowrap": https://flexbox.help/*/
   margin: auto;
-  perspective: 1000px;
+  perspective: 1000px; /*This is to make the 3D effect work - it will add depth in 3D-positioned space*/
 }
 
+/*Start: Styling of the tiles.*/
 .tile {
-  width: calc(16.666% - 10px);
-  height: calc(33.333% - 10px);
+  width: calc(16.666% - 10px); /*To calculate the tile width and height with the margin taken into account*/
+  height: calc(33.333% - 10px); /*Percentages represent 1/3 and 1/6, because it's a 3x6 grid. Basically it amounts to 150px x 170px tile size here*/
   margin: 5px;
   position: relative;
   cursor: pointer;
   transform: scale(1);
-  transform-style: preserve-3d;
-  transition: transform .5s;
+  transform-style: preserve-3d; /*This should make the 3D effect work, in connection with the perspective property above,*/
+  transition: transform .5s;    /*because, "it is the CHILD elements that get the perspective view, NOT the element itself." (https://www.w3schools.com/cssref/css3_pr_perspective.asp)*/
 }
 
 #threebyfour-grid-body .tile {
-  width: calc(25% - 10px);
-  height: calc(33.333% - 10px);
+  width: calc(25% - 10px); /*Here, as opposed to above, percentages represent 1/3 and 1/4, because it's a 3x4 grid.*/
+  height: calc(33.333% - 10px); /*. Here the tile size basically amounts to 150px x 170px also, to make the game visually more consistent*/
 }
 
 .tile-front,
@@ -147,7 +148,7 @@ a:hover {
   width: 100%;
   height: 100%;
   padding: 20px;
-  position: absolute;
+  position: absolute; /*Positioning in relation to the relative positioning of the .tile class above*/
   border-radius: 10px;
   backface-visibility: hidden;
 }
@@ -173,5 +174,6 @@ a:hover {
 .tile.flipped {
   transform: rotateY(180deg);
 }
+/*End: Styling of the tiles.*/
 
 /* ***END: Styling of the 3x4_grid.html & the 3x6_grid.html*** */
