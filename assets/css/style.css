@@ -22,7 +22,7 @@ html {
 /*Styling the index.html body container: font and background image*/
 #index-body {
   font-family: "Gloria Hallelujah", cursive;
-  background-image: url("/assets/img/background/tri-color-diamond-glass-background-618226_1280.png");
+  background-image: url("../img/background/tri-color-diamond-glass-background-618226_1280.png");
   height: 100%; /*Set the height to be 100% of the parent container, which is html, whose height is set to 100% of the browser*/
   background-position: center;
   background-repeat: repeat-y;
@@ -82,7 +82,7 @@ a:active {
 
 a:hover {
   color: blue;
-  cursor: url("/assets/img/rest/cat-paw-black(20x19).png"), pointer; /*Add a custom cursor image, with pointer as a fallback option*/
+  cursor: url("../img/rest/cat-paw-black(20x19).png"), pointer; /*Add a custom cursor image, with pointer as a fallback option*/
 }
 
 /* ***END: Styling of the index.html*** */
@@ -92,7 +92,7 @@ a:hover {
 
 #threebysix-grid-body {
   display: flex; /*Setting display to "flex" comes with a set of connected default properties, one of which (flex-wrap) is to be altered below: https://flexbox.help/*/
-  background-image: url("/assets/img/background/pattern-4008915_1280.png");
+  background-image: url("../img/background/pattern-4008915_1280.png");
   height: 100%;
   background-position: center;
   background-repeat: repeat-y;
@@ -101,7 +101,7 @@ a:hover {
 
 #threebyfour-grid-body {
   display: flex; /*Setting display to "flex" comes with a set of connected default properties, one of which (flex-wrap) is to be altered below: https://flexbox.help/*/
-  background-image: url("/assets/img/background/pattern-3296033_1280.png");
+  background-image: url("../img/background/pattern-3296033_1280.png");
   height: 100%;
   background-position: center;
   background-repeat: repeat-y;
