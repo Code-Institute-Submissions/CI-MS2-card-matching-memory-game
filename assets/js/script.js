@@ -1,3 +1,6 @@
+/*jshint esversion: 6 */ /*This line apparantly needs to be added for the code to pass jshint: 
+https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const*/
+
 /*Defining and initializing some variables and constants to be used within the code*/
 
 /*Make a list of all elements marked with ".tile", and store that list in a constant, named "tiles"*/
@@ -43,7 +46,9 @@ function checkForMatch() {
     /*"dataset" object in JS is to access (check) the "data-*" attribute set in html*/
     firstTile.dataset.pairingnumber === secondTile.dataset.pairingnumber;
 
-  isMatch ? disableTiles() : flipTilesBack();
+  if (isMatch) {
+    disableTiles();
+  } else flipTilesBack();
 }
 
 /*If a match has been made, "disable" the tiles - i.e. remove the event listener, so as to prevent them from
