@@ -46,6 +46,7 @@ p {
 }
 
 /*Start: Making the list elements display side by side.*/
+/*The method is explained here: https://css-tricks.com/centering-list-items-horizontally-slightly-trickier-than-you-might-think/*/
 #table {
   display: table;
   margin: 0 auto;
@@ -154,7 +155,7 @@ a:hover {
 }
 
 #threebysix-grid-body .tile-back {
-  background:  #D68717;
+  background:  #d68717;
 }
 
 #threebyfour-grid-body .tile-back {
