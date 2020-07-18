@@ -179,3 +179,36 @@ a:hover {
 /*End: Styling of the tiles.*/
 
 /* ***END: Styling of the 3x4_grid.html & the 3x6_grid.html*** */
+
+/*Some responsiveness styling to make the links to girds on Landing Page
+still display side by side on smaller screens*/
+@media screen and (max-width: 535px) {
+
+  a[href = "3x4 grid.html"] > .fa-paw:nth-child(2) {
+  padding-right: 2em;
+}
+
+a[href = "3x6 grid.html"] > .fa-paw:nth-child(1) {
+  padding-left: 2em;
+}
+
+  .fa-paw {
+    padding: 0.5em;
+  }
+}
+
+
+@media screen and (max-width: 398px) {
+
+  a[href = "3x4 grid.html"] > .fa-paw:nth-child(2) {
+  padding-right: 0.5em;
+}
+
+a[href = "3x6 grid.html"] > .fa-paw:nth-child(1) {
+  padding-left: 0.5em;
+}
+
+  .fa-paw {
+    padding: 0.3em;
+  }
+}
