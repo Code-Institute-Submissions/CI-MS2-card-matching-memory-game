@@ -181,18 +181,29 @@ A new tile can be turned only when the preceding two have flipped back (if a mat
 
 ### ***Features left to implement***
 
-<ul>
-<li>sounds to accompany the game</li>
-<li>larger pool of backgrounds - so that a different background could be loaded with a new game</li>
-<li>"chessboard style" ruler for smaller screens - the idea is to have two "rulers" - a vertical and a horizontal one - when playing the game on smaller screens.
-For larger grids, the front of the tile images wouldn't then have to be reduced to the size of indiscernibility, but could be rather kept at a tolerable size,
+- sounds to accompany the game
+- larger pool of backgrounds
+    - so that a different background could be loaded with a new game
+- "chessboard style" ruler for smaller screens
+    - the idea is to have two "rulers" - a vertical and a horizontal one - when playing the game on smaller screens
+    - for larger grids, the front of the tile images wouldn't then have to be reduced to the size of indiscernibility, but could be rather kept at a tolerable size,
 with a horizontal ruler - marked from "A" to whichever letter, depending on the number of columns, and a vertical ruler - marked from "1" to
-whichever number, depending on the number of rows. So a player would for example now he's flipping tiles "B2" and "D5" - i.e. would always know where he is (at which tile), 
-even when scrolling in both directions</li>
-<li>radio buttons and a large clickable paw icon on the Landing Page, for selecting a grid: user would mark the button next to a desired grid, 
-and then click on the large paw to "enter" - seemingly giving a "cat five" to start</li>
-<li>graph ("wireframe") that visuali explain the memory game's JS logic to be added to the project's documentation</li>
-</ul>
+whichever number, depending on the number of rows
+    - so a player would for example now he's flipping tiles "B2" and "D5" - i.e. would always know where he is (at which tile), 
+even when scrolling in both directions
+- radio buttons and a large clickable paw icon on the Landing Page, for selecting a grid
+    - user would mark the button next to a desired grid, 
+and then click on the large paw to "enter" - seemingly giving a "cat five" to start
+- graph ("wireframe") that visuali explain the memory game's JS logic to be added to the project's documentation
+- landscape orientation lock for smaller screens - the game does not look well when it's loaded in portrait orientation mode on very small screens, and is practically unplayable in such a case for a 3x6 grid, because
+all the tiles diplay horizontally in the viewport (they scroll vertically)
+    - so the idea is to make the game load only in landscape mode for those screen sizes, which would make it still playable on those screens
+- adding a home (back to) button on both of grids
+    - the greatest - and quite a big flaw of the site's design is that it doesn't have a back to home button or either of the grids, that would lead the user 
+to the front page 
+    - rather, the users would have to use the back button on their browser at the moment 
+    - the home button is not yet implemented as the choice to use a flexbox in designing the grids is causing some display/layout issue in adding such a button
+    - this feature would be a priority to add
 
 ---
 ## Technologies and Tools Used
