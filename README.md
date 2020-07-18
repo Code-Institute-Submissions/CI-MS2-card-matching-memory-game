@@ -50,6 +50,8 @@ each of the boards has. The landing page is comprised of a short introductory/ex
     </ol>
 </ol>
 
+A rudimentary/crude [wireframe can be seen here](wireframes/MS2-Wireframe.png).
+
 ---
 ## Layout
 
@@ -189,6 +191,7 @@ whichever number, depending on the number of rows. So a player would for example
 even when scrolling in both directions</li>
 <li>radio buttons and a large clickable paw icon on the Landing Page, for selecting a grid: user would mark the button next to a desired grid, 
 and then click on the large paw to "enter" - seemingly giving a "cat five" to start</li>
+<li>graph ("wireframe") that visuali explain the memory game's JS logic to be added to the project's documentation</li>
 </ul>
 
 ---
