@@ -367,7 +367,10 @@ Note: it can take a minute or two for the page to be deployed, i.e. to load or o
 ### ***Acknowledgements***
 
 There seems to be quite a few memory game tutorials available on the internet. I've mainly used two, that are already listed above under "Technologies and Tools Used":
-Adam Khoury's - to a lesser extent, and Marina Ferreira's - to the greatest extent. Without Marina's tutorial I don't how would I've finished this project; maybe even 
-how would I've started. Or how far would I've got, and how long it would take me to get there.
+Adam Khoury's - to a lesser extent, and Marina Ferreira's - to the greatest extent. 
+
+Without Marina's tutorial I don't how would I've finished this project; maybe even 
+how would I've started. Or how far would I've got, and how long it would take me to get there. The logical build of the actual memory game, the way it's
+structured, is basically hers.
 
 And I've always be grateful to Claire Lally, for being kind enough to send me a link to her readme.md file, when I was doing my very first project, to assist me in writting my readme - https://github.com/ClaireLally8/TravelDiary/blob/master/README.md
